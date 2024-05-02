@@ -1,38 +1,96 @@
-.App {
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  height: 100vh;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f5f1f1;
+}
+
+.app-box {
+  width: 30vw;
+  height: fit-content;
+  background-color: rgb(27, 27, 27);
+  padding: 5vh;
+  padding-top: 1vh;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: relative;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-container {
+  width: 100%;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-file {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fileInputLabel {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #d8e0d8;
+  color: rgb(21, 21, 21);
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fileInputLabel:hover {
+  background-color: #212121;
+}
+
+.button {
+  background-color: #1b75eb;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #e1e2e9;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 10px;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #8c9197;
+}
+
+.results {
+  margin-top: 20px;
+  text-align: center; /* Center the text */
+}
+
+.results p {
+  margin: 5px 0;
+  font-size: 20px;
 }
