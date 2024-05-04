@@ -26,7 +26,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (imagePath) {
-      const imageAddress = `C:\\Users\\muska\\OneDrive\\Desktop\\data_ug\\${imagePath}`;
+      const imageAddress = `C:\\Users\\muska\\OneDrive\\Desktop\\data\\${imagePath}`;
       const imageData = jsonData.find(
         (data) => data['Image_Address'] === imageAddress
       );
